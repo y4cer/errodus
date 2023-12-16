@@ -1,11 +1,12 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/y4cer/errodus/internal"
+	"github.com/y4cer/errodus/internal/math"
 )
 
 func main() {
-	fmt.Println("vim-go", internal.F(123))
+	var m math.Matrix
+
+	m.ParseFromFile("examples/2x2")
+	m.Print("2x2")
 }
